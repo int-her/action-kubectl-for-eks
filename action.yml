@@ -1,0 +1,13 @@
+name: action-kubectl-for-eks
+author: int-her
+description: A Github action to run kubectl for EKS
+branding:
+  icon: box
+  color: purple
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+inputs:
+  args:
+    description: kubectl command
+    required: true
